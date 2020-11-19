@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'PT Sans';
+  src: local('PTSans'), url(./fonts/PTSans-Regular.ttf) format('truetype');
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'PT Sans';
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 80px;
+  background-color: #eeeeee;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #cccccc;
+  padding: 0px 20px;  
+}
+
+.header h2 {
+  margin: 0px;  
+  color: #777777;
+  font-weight: 500;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100vh;
+  border-right: 1px solid #cccccc;
+  float: left;
+}
+
+.noteListItem {
+  padding: 10px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.noteListItem .noteHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noteListItem .noteHeading h3 {
+  margin: 0px;
+  font-weight: 400;
+  color: #5f5f5f;
+}
+
+.noteListItem .noteHeading button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.noteListItem p {
+  margin: 5px 0px;
+  font-weight: 200;
+  color: #929090;
+}
+
+.login {    
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  vertical-align: middle;  
+  height: calc(100vh - 200px); 
+}
+
+.login .loginContainer {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.addNote {    
+  display: flex;
+  justify-content: center;  
+  align-items: center; 
+  vertical-align: middle;  
+  height: calc(100vh - 200px); 
+}
+
+.addNote .addNoteContainer {
+  border: 1px solid #cccccc;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px 10px;
+}
+
+.formGroup input {
+  border: none;
+  background: #e2e2e299;
+  height: 35px;
+  border-radius: 5px;
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.formGroup textarea {
+  border: none;
+  background: #e2e2e299;
+  height: 35px;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+  height: 200px;
+}
+
+.btn {
+  background-color: #0069ff;
+  border: 1px solid #0069ff;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 100%;
+  margin-left: 20px;
+  padding: 8px 24px;
+  -webkit-transition: background-color .25s ease,border .25s ease,color .25s ease;
+  transition: background-color .25s ease,border .25s ease,color .25s ease;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
